@@ -1,0 +1,204 @@
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script async='async' src='https://cdn.profootballrumors.com/js/prebid.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  googletag.cmd.push(function() {
+    googletag.pubads().disableInitialLoad();
+  });
+
+  var FAILSAFE_TIMEOUT = 3300;
+
+  var adUnits = [
+    {   
+      code: 'div-gpt-ad-1519227908751-1', // pfr_sidebar1_d
+      mediaTypes: { banner: { sizes: [[300, 600], [160, 600], [250, 250], [300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '701853'}},
+        {bidder: 'appnexus', params: {placementId: 22586866}},
+        {bidder: 'sovrn', params: {tagid: '928838'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_sidebar1'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '684582465'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'pfr_sidebar1'}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    { 
+      code: 'div-gpt-ad-1519227908751-5', // pfr_sidebar2_d
+      mediaTypes: { banner: { sizes: [[120, 600], [300, 600], [160, 600], [300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '701854'}},
+        {bidder: 'appnexus', params: {placementId: 22586899}},
+        {bidder: 'sovrn', params: {tagid: '928839'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_sidebar2_d'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '514468116'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'pfr_sidebar2_d'}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1519227908751-0', // pfr_header_d
+      mediaTypes: { banner: { sizes: [[468, 60], [970, 90], [728, 90]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '701855'}},
+        {bidder: 'appnexus', params: {placementId: 22586900}},
+        {bidder: 'sovrn', params: {tagid: '928840'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_header_d'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '843142536'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'pfr_header_d'}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1519227908751-2', // pfr_body1_d
+      mediaTypes: { banner: { sizes: [[320, 50], [468, 60], [336, 280], [250, 250], [300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '701856'}},
+        {bidder: 'appnexus', params: {placementId: 22586901}},
+        {bidder: 'sovrn', params: {tagid: '928841'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_body1_d'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '638855436'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'pfr_body1_d'}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1519227908751-3', // pfr_body2_d
+      mediaTypes: { banner: { sizes: [[320, 50], [468, 60], [336, 280], [250, 250], [300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '701857'}},
+        {bidder: 'appnexus', params: {placementId: 22586902}},
+        {bidder: 'sovrn', params: {tagid: '928842'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_body2_d'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '394555112'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'pfr_body2_d'}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1519227908751-4', // pfr_body3_d
+      mediaTypes: { banner: { sizes: [[320, 50], [468, 60], [336, 280], [250, 250], [300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '701858'}},
+        {bidder: 'appnexus', params: {placementId: 22586903}},
+        {bidder: 'sovrn', params: {tagid: '928843'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_body3_d'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '429102471'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'pfr_body3_d'}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1519227908751-6', // pfr_stickyfooter_d
+      mediaTypes: { banner: { sizes: [[468, 60], [728, 90]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '701859'}},
+        {bidder: 'appnexus', params: {placementId: 22586904}},
+        {bidder: 'sovrn', params: {tagid: '928844'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_sticky_footer_d'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '327484994'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'pfr_stickyfooter_d'}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1680362321158-0',
+      mediaTypes: { banner: { sizes: [[300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '980953'}},
+        {bidder: 'appnexus', params: {placementId: 22586903}},
+        {bidder: 'sovrn', params: {tagid: '928843'}},
+        {bidder: 'triplelift', params: {inventoryCode: '300x250_5_side_pfr'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '429102471'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: '300x250_5_side_pfr'}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    }
+  ];
+
+
+  const customConfigObject = {
+    "buckets": [
+      { "precision": 2, "min": 0.01, "max": 150, "increment": 0.01 }
+    ]
+  };
+
+  var pbjs = pbjs || {};
+  pbjs.que = pbjs.que || [];
+
+  pbjs.que.push(function() {
+    pbjs.addAdUnits(adUnits);
+    pbjs.setConfig({
+      priceGranularity: customConfigObject,
+      useBidCache: true,
+      pubcid: {
+        expInterval: 525600,
+        enable: true,
+        type: 'cookie',
+      }
+    });
+    pbjs.requestBids({
+      bidsBackHandler: sendAdserverRequest
+    });
+  });
+
+  function sendAdserverRequest() {
+    if (pbjs.adserverRequestSent) return;
+    pbjs.adserverRequestSent = true;
+    googletag.cmd.push(function() {
+      pbjs.que.push(function() {
+        pbjs.setTargetingForGPTAsync();
+        googletag.pubads().refresh();
+      });
+    });
+  }
+
+  setTimeout(function() {
+      sendAdserverRequest();
+  }, FAILSAFE_TIMEOUT);
+
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/5067886/728x90_pfr', [[468, 60], [970, 90], [728, 90]], 'div-gpt-ad-1519227908751-0').addService(googletag.pubads());
+    googletag.defineSlot('/5067886/300x250_1_pfr', [[300, 600], [160, 600], [250, 250], [300, 250]], 'div-gpt-ad-1519227908751-1').addService(googletag.pubads());
+    googletag.defineSlot('/5067886/728x90_2_pfr', [[468, 60], [728, 90]], 'div-gpt-ad-1519227908751-6').addService(googletag.pubads());
+    googletag.defineSlot('/5067886/160x600_pfr', [[120, 600], [300, 600], [160, 600], [300, 250]], 'div-gpt-ad-1519227908751-5').addService(googletag.pubads());
+    if ( ! document.body.className.match(/\bsingle\b/) ) {
+      googletag.defineSlot('/5067886/300x250_2_pfr', [[320, 50], [468, 60], [336, 280], [250, 250], [300, 250]], 'div-gpt-ad-1519227908751-2').addService(googletag.pubads());
+      googletag.defineSlot('/5067886/300x250_3_pfr', [[320, 50], [468, 60], [336, 280], [250, 250], [300, 250]], 'div-gpt-ad-1519227908751-3').addService(googletag.pubads());
+      googletag.defineSlot('/5067886/300x250_4_PFR', [[320, 50], [468, 60], [336, 280], [250, 250], [300, 250]], 'div-gpt-ad-1519227908751-4').addService(googletag.pubads());
+    }
+    googletag.defineSlot('/5067886/300x250_5_side_pfr', [300, 250], 'div-gpt-ad-1680362321158-0').addService(googletag.pubads());
+    //googletag.pubads().enableSingleRequest();
+    googletag.pubads().enableAsyncRendering();
+    googletag.enableServices();
+
+    googletag.pubads().addEventListener("slotRenderEnded", function(event) {
+      var slots = googletag.pubads().getSlots();
+      slots.forEach(function(slot) {
+        if (event.size) {
+          var slotId = slot.getSlotId().getDomId();
+          if (slotId === event.slot.getSlotElementId()) {
+            var slotEl = document.getElementById(slotId), frame = jQuery(slotEl).find('iframe').eq(0), width = frame.outerWidth(), height = frame.outerHeight();
+            slotEl.style.setProperty("--outside-ads-width", width + 20 + "px");
+            slotEl.style.setProperty("--outside-ads-height", height + 27 + "px");
+            slotEl.classList.add("prevent-click-outside-ads");
+
+            frame.on('load', function(){
+              var width = frame.outerWidth(), height = frame.outerHeight();
+              slotEl.style.setProperty("--outside-ads-width", width + 20 + "px");
+              slotEl.style.setProperty("--outside-ads-height", height + 27 + "px");
+            });
+          }
+        }
+      });
+    });
+  });
+</script>

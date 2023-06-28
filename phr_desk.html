@@ -1,0 +1,186 @@
+<script async='async' src='https://securepubads.g.doubleclick.net/tag/js/gpt.js'></script>
+<script data-minify="1" async='async' src='https://cdn.prohockeyrumors.com/js/prebid.js'></script>
+
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  googletag.cmd.push(function () {
+    googletag.pubads().disableInitialLoad();
+  });
+
+  var FAILSAFE_TIMEOUT = 3300;
+
+  var adUnits = [
+    {
+      code: 'div-gpt-ad-1520443782475-1',
+      mediaTypes: { banner: { sizes: [[300, 250]] } },
+      bids: [
+        { bidder: 'ix', params: { siteId: '759380' } },
+        { bidder: 'appnexus', params: { placementId: 24426368 } },
+        { bidder: 'sovrn', params: { tagid: '988203' } },
+        { bidder: 'triplelift', params: { inventoryCode: 'phr_sidebar1_d' } },
+        { bidder: 'medianet', params: { cid: '8CU6VMEF4', crid: '684582465' } },
+        { bidder: 'conversant', params: { site_id: '215654' } },
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'phr_sidebar1_d'}},
+        {bidder: 'adtelligent', params: {aid: 824540}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1520443782475-5',
+      mediaTypes: { banner: { sizes: [[300, 600]] } },
+      bids: [
+        { bidder: 'ix', params: { siteId: '759381' } },
+        { bidder: 'appnexus', params: { placementId: 24426369 } },
+        { bidder: 'sovrn', params: { tagid: '988204' } },
+        { bidder: 'triplelift', params: { inventoryCode: 'phr_sidebar2_d' } },
+        { bidder: 'medianet', params: { cid: '8CU6VMEF4', crid: '514468116' } },
+        { bidder: 'conversant', params: { site_id: '215654' } },
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'phr_sidebar2_d'}},
+        {bidder: 'adtelligent', params: {aid: 824540}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1520443782475-0',
+      mediaTypes: { banner: { sizes: [[728, 90]] } },
+      bids: [
+        { bidder: 'ix', params: { siteId: '759382' } },
+        { bidder: 'appnexus', params: { placementId: 24426370 } },
+        { bidder: 'sovrn', params: { tagid: '988205' } },
+        { bidder: 'triplelift', params: { inventoryCode: 'phr_header_d' } },
+        { bidder: 'medianet', params: { cid: '8CU6VMEF4', crid: '843142536' } },
+        { bidder: 'conversant', params: { site_id: '215654' } },
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: ''}},
+        {bidder: 'adtelligent', params: {aid: 824540}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1520443782475-2',
+      mediaTypes: { banner: { sizes: [[300, 250]] } },
+      bids: [
+        { bidder: 'ix', params: { siteId: '759383' } },
+        { bidder: 'appnexus', params: { placementId: 24426371 } },
+        { bidder: 'sovrn', params: { tagid: '988206' } },
+        { bidder: 'triplelift', params: { inventoryCode: 'phr_body1_d' } },
+        { bidder: 'medianet', params: { cid: '8CU6VMEF4', crid: '638855436' } },
+        { bidder: 'conversant', params: { site_id: '215654' } },
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'phr_body1_d'}},
+        {bidder: 'adtelligent', params: {aid: 824540}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1520443782475-3',
+      mediaTypes: { banner: { sizes: [[300, 250]] } },
+      bids: [
+        { bidder: 'ix', params: { siteId: '759384' } },
+        { bidder: 'appnexus', params: { placementId: 24426372 } },
+        { bidder: 'sovrn', params: { tagid: '988207' } },
+        { bidder: 'triplelift', params: { inventoryCode: 'phr_body2_d' } },
+        { bidder: 'medianet', params: { cid: '8CU6VMEF4', crid: '394555112' } },
+        { bidder: 'conversant', params: { site_id: '215654' } },
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'phr_body2_d'}},
+        {bidder: 'adtelligent', params: {aid: 824540}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1520443782475-4',
+      mediaTypes: { banner: { sizes: [[300, 250]] } },
+      bids: [
+        { bidder: 'ix', params: { siteId: '759385' } },
+        { bidder: 'appnexus', params: { placementId: 24426373 } },
+        { bidder: 'sovrn', params: { tagid: '988208' } },
+        { bidder: 'triplelift', params: { inventoryCode: 'phr_body3_d' } },
+        { bidder: 'medianet', params: { cid: '8CU6VMEF4', crid: '429102471' } },
+        { bidder: 'conversant', params: { site_id: '215654' } },
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'phr_body3_d'}},
+        {bidder: 'adtelligent', params: {aid: 824540}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1520443782475-6',
+      mediaTypes: { banner: { sizes: [[728, 90]] } },
+      bids: [
+        { bidder: 'ix', params: { siteId: '759386' } },
+        { bidder: 'appnexus', params: { placementId: 24426374 } },
+        { bidder: 'sovrn', params: { tagid: '988209' } },
+        { bidder: 'triplelift', params: { inventoryCode: 'phr_stickyfooter_d' } },
+        { bidder: 'medianet', params: { cid: '8CU6VMEF4', crid: '327484994' } },
+        { bidder: 'conversant', params: { site_id: '215654' } },
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'phr_stickyfooter_d'}},
+        {bidder: 'adtelligent', params: {aid: 824540}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1680362354649-0',
+      mediaTypes: { banner: { sizes: [[300, 250]] } },
+      bids: [
+        { bidder: 'ix', params: { siteId: '980952' } },
+        { bidder: 'appnexus', params: { placementId: 24426373 } },
+        { bidder: 'sovrn', params: { tagid: '988208' } },
+        { bidder: 'triplelift', params: { inventoryCode: '300x250_5_side_phr' } },
+        { bidder: 'medianet', params: { cid: '8CU6VMEF4', crid: '429102471' } },
+        { bidder: 'conversant', params: { site_id: '215654' } },
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: '300x250_5_side_phr'}},
+        {bidder: 'adtelligent', params: {aid: 824540}}
+      ]
+    }
+  ];
+
+  const customConfigObject = {
+    "buckets": [
+      { "precision": 2, "min": 0.01, "max": 150, "increment": 0.01 }
+    ]
+  };
+
+  var pbjs = pbjs || {};
+  pbjs.que = pbjs.que || [];
+
+  pbjs.que.push(function () {
+    pbjs.addAdUnits(adUnits);
+
+    pbjs.setConfig({
+      priceGranularity: customConfigObject,
+      useBidCache: true,
+      pubcid: {
+        expInterval: 525600,
+        enable: true,
+        type: 'cookie',
+      }
+    });
+    pbjs.requestBids({
+      bidsBackHandler: sendAdserverRequest
+    });
+  });
+
+  function sendAdserverRequest() {
+    if (pbjs.adserverRequestSent) return;
+
+    pbjs.adserverRequestSent = true;
+
+    googletag.cmd.push(function () {
+      pbjs.que.push(function () {
+        pbjs.setTargetingForGPTAsync();
+        googletag.pubads().refresh();
+      });
+    });
+  }
+
+  setTimeout(function () {
+    sendAdserverRequest();
+  }, FAILSAFE_TIMEOUT);
+
+  googletag.cmd.push(function () {
+    googletag.defineSlot('/5067886/728x90_phr', [728, 90], 'div-gpt-ad-1520443782475-0').addService(googletag.pubads());
+    googletag.defineSlot('/5067886/300x250_1_phr', [300, 250], 'div-gpt-ad-1520443782475-1').addService(googletag.pubads());
+    if ( ! document.body.className.match(/\bsingle\b/) ) {
+      googletag.defineSlot('/5067886/300x250_2_phr', [300, 250], 'div-gpt-ad-1520443782475-2').addService(googletag.pubads());
+      googletag.defineSlot('/5067886/300x250_3_phr', [300, 250], 'div-gpt-ad-1520443782475-3').addService(googletag.pubads());
+      googletag.defineSlot('/5067886/300x250_4_PHR', [300, 250], 'div-gpt-ad-1520443782475-4').addService(googletag.pubads());
+    }
+    googletag.defineSlot('/5067886/160x600_phr', [300, 600], 'div-gpt-ad-1520443782475-5').addService(googletag.pubads());
+    googletag.defineSlot('/5067886/728x90_2_phr', [728, 90], 'div-gpt-ad-1520443782475-6').addService(googletag.pubads());
+    googletag.defineSlot('/5067886/300x250_5_side_phr', [300, 250], 'div-gpt-ad-1680362354649-0').addService(googletag.pubads());
+    //googletag.pubads().enableSingleRequest();
+    googletag.pubads().enableAsyncRendering();
+    googletag.enableServices();
+  });
+</script>

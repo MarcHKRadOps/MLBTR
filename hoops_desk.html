@@ -1,0 +1,204 @@
+<script async='async' src='https://securepubads.g.doubleclick.net/tag/js/gpt.js'></script>
+<script data-minify="1" async='async' src='https://www.hoopsrumors.com/js/prebid.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  googletag.cmd.push(function() {
+    googletag.pubads().disableInitialLoad();
+  });
+
+  var FAILSAFE_TIMEOUT = 3300;
+
+  var adUnits = [
+    {   
+      code: 'div-gpt-ad-1520443578103-1', // hoops_rumors_sidebar1_d 
+      mediaTypes: { banner: { sizes: [[300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '759360'}},
+        {bidder: 'appnexus', params: {placementId: 24426346}},
+        {bidder: 'sovrn', params: {tagid: '988213'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'hoops_sidebar1_d'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '684582465'}},
+        {bidder: 'conversant', params: {site_id: '215655'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'hoops_sidebar1_d'}},
+        {bidder: 'adtelligent', params: {aid: 824542}}
+      ]
+    },
+    { 
+      code: 'div-gpt-ad-1520443578103-5', //sidebar2_d 
+      mediaTypes: { banner: { sizes: [[300, 600]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '759361'}},
+        {bidder: 'appnexus', params: {placementId: 24426347}},
+        {bidder: 'sovrn', params: {tagid: '988214'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'hoops_sidebar2_d'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '514468116'}},
+        {bidder: 'conversant', params: {site_id: '215655'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'hoops_sidebar2_d'}},
+        {bidder: 'adtelligent', params: {aid: 824542}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1520443578103-0', // header_d DONE   ('/5067886/728x90_MLB',
+      mediaTypes: { banner: { sizes: [[728, 90]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '759362'}},
+        {bidder: 'appnexus', params: {placementId: 24426348}},
+        {bidder: 'sovrn', params: {tagid: '988215'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'hoops_header_d'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '843142536'}},
+        {bidder: 'conversant', params: {site_id: '215655'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'hoops_header_d'}},
+        {bidder: 'adtelligent', params: {aid: 824542}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1520443578103-2', // mlb_body1_d   DONE    /5067886/300x250_2_MLB
+      mediaTypes: { banner: { sizes: [[300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '759363'}},
+        {bidder: 'appnexus', params: {placementId: 24426350}},
+        {bidder: 'sovrn', params: {tagid: '988216'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'hoops_body1_d'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '638855436'}},
+        {bidder: 'conversant', params: {site_id: '215655'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'hoops_body1_d'}},
+        {bidder: 'adtelligent', params: {aid: 824542}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1520443578103-3', // mlb_body2_d   DONE          /5067886/300x250_3_MLB'
+      mediaTypes: { banner: { sizes: [[300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '759364'}},
+        {bidder: 'appnexus', params: {placementId: 24426351}},
+        {bidder: 'sovrn', params: {tagid: '988217'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'hoops_body2_d'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '394555112'}},
+        {bidder: 'conversant', params: {site_id: '215655'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'hoops_body2_d'}},
+        {bidder: 'adtelligent', params: {aid: 824542}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1520443578103-4', // mlb_body3_d DONE               /5067886/300x250_4_MLB'
+      mediaTypes: { banner: { sizes: [[300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '759365'}},
+        {bidder: 'appnexus', params: {placementId: 24426352}},
+        {bidder: 'sovrn', params: {tagid: '988218'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'hoops_body3_d'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '429102471'}},
+        {bidder: 'conversant', params: {site_id: '215655'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'hoops_body3_d'}},
+        {bidder: 'adtelligent', params: {aid: 824542}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1520443578103-6', // mlb_stickyfooter_d  '/5067886/728x90_2_MLB'
+      mediaTypes: { banner: { sizes: [[728, 90]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '759366'}},
+        {bidder: 'appnexus', params: {placementId: 24426354}},
+        {bidder: 'sovrn', params: {tagid: '988219'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'hoops_stickyfooter_d'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '327484994'}},
+        {bidder: 'conversant', params: {site_id: '215655'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'hoops_stickyfooter_d'}},
+        {bidder: 'adtelligent', params: {aid: 824542}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1680362270968-0', 
+      mediaTypes: { banner: { sizes: [[300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '980949'}},
+        {bidder: 'appnexus', params: {placementId: 24426352}},
+        {bidder: 'sovrn', params: {tagid: '988218 '}},
+        {bidder: 'triplelift', params: {inventoryCode: '300x250_5_side_hoops'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: ''}},
+        {bidder: 'conversant', params: {site_id: '215655'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: '300x250_5_side_hoops'}},
+        {bidder: 'adtelligent', params: {aid: 824542}}
+      ]
+    }
+  ];
+
+
+  const customConfigObject = {
+    "buckets": [
+      { "precision": 2, "min": 0.01, "max": 150, "increment": 0.01 }
+    ]
+  };
+
+  var pbjs = pbjs || {};
+  pbjs.que = pbjs.que || [];
+
+  pbjs.que.push(function() {
+    pbjs.addAdUnits(adUnits);
+    pbjs.setConfig({
+      priceGranularity: customConfigObject,
+      useBidCache: true,
+      pubcid: {
+        expInterval: 525600,
+        enable: true,
+        type: 'cookie',
+      }
+    });
+    pbjs.requestBids({
+      bidsBackHandler: sendAdserverRequest
+    });
+  });
+
+  function sendAdserverRequest() {
+    if (pbjs.adserverRequestSent) return;
+    pbjs.adserverRequestSent = true;
+    googletag.cmd.push(function() {
+      pbjs.que.push(function() {
+        pbjs.setTargetingForGPTAsync();
+        googletag.pubads().refresh();
+      });
+    });
+  }
+
+  setTimeout(function() {
+      sendAdserverRequest();
+  }, FAILSAFE_TIMEOUT);
+
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/5067886/728x90_hoops_rumors', [728, 90], 'div-gpt-ad-1520443578103-0').addService(googletag.pubads());
+    googletag.defineSlot('/5067886/300x250_1_hoops_rumors', [300, 250], 'div-gpt-ad-1520443578103-1').addService(googletag.pubads());
+    googletag.defineSlot('/5067886/300x250_2_hoops_rumors', [300, 250], 'div-gpt-ad-1520443578103-2').addService(googletag.pubads());
+    if ( ! document.body.className.match(/\bsingle\b/) ) {
+      googletag.defineSlot('/5067886/300x250_3_hoops_rumors', [300, 250], 'div-gpt-ad-1520443578103-3').addService(googletag.pubads());
+      googletag.defineSlot('/5067886/300x250_4_Hoops', [300, 250], 'div-gpt-ad-1520443578103-4').addService(googletag.pubads());
+    }
+    googletag.defineSlot('/5067886/160x600_hoops_rumors', [300, 600], 'div-gpt-ad-1520443578103-5').addService(googletag.pubads());
+    googletag.defineSlot('/5067886/728x90_2_hoops', [728, 90], 'div-gpt-ad-1520443578103-6').addService(googletag.pubads());
+    googletag.defineSlot('/5067886/300x250_5_side_hoops', [300, 250], 'div-gpt-ad-1680362270968-0').addService(googletag.pubads());
+    //googletag.pubads().enableSingleRequest();
+    googletag.pubads().enableAsyncRendering();
+    googletag.enableServices();
+
+    googletag.pubads().addEventListener("slotRenderEnded", function(event) {
+      var slots = googletag.pubads().getSlots();
+      slots.forEach(function(slot) {
+        if (event.size) {
+          var slotId = slot.getSlotId().getDomId();
+          if (slotId === event.slot.getSlotElementId()) {
+            var slotEl = document.getElementById(slotId), frame = jQuery(slotEl).find('iframe').eq(0), width = frame.outerWidth(), height = frame.outerHeight();
+            slotEl.style.setProperty("--outside-ads-width", width + 20 + "px");
+            slotEl.style.setProperty("--outside-ads-height", height + 27 + "px");
+            slotEl.classList.add("prevent-click-outside-ads");
+
+            frame.on('load', function(){
+              var width = frame.outerWidth(), height = frame.outerHeight();
+              slotEl.style.setProperty("--outside-ads-width", width + 20 + "px");
+              slotEl.style.setProperty("--outside-ads-height", height + 27 + "px");
+            });
+          }
+        }
+      });
+    });
+  });
+</script>

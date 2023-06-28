@@ -1,0 +1,286 @@
+<script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+<script async="async" src="https://cdn.profootballrumors.com/js/prebid.js"></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  googletag.cmd.push(function() {
+    googletag.pubads().disableInitialLoad();
+  });
+
+  var FAILSAFE_TIMEOUT = 3300;
+
+  var adUnits = [
+    {
+      code: 'div-gpt-ad-1519331623268-2',
+      mediaTypes: { banner: { sizes: [[320, 50]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '701860'}},
+        {bidder: 'appnexus', params: {placementId: 22586905}},
+        {bidder: 'sovrn', params: {tagid: '928845'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_sticky_header_m'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '108569056'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'pfr_sticky_header_m'}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1591129859473-0',
+      mediaTypes: { banner: { sizes: [[320, 50]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '701861'}},
+        {bidder: 'appnexus', params: {placementId: 22586906}},
+        {bidder: 'sovrn', params: {tagid: '928846'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_sticky_footer_m'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '714806565'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'pfr_sticky_footer_m'}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1519331623268-3',
+      mediaTypes: { banner: { sizes: [[300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '701862'}},
+        {bidder: 'appnexus', params: {placementId: 22586907}},
+        {bidder: 'sovrn', params: {tagid: '928847'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '360152156'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: ''}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1519331623268-0',
+      mediaTypes: { banner: { sizes: [[320, 50]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '701860'}},
+        {bidder: 'appnexus', params: {placementId: 22586905}},
+        {bidder: 'sovrn', params: {tagid: '928845'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_sticky_header_m'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '108569056'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: ''}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1591129820116-0',
+      mediaTypes: { banner: { sizes: [[320, 50]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '701861'}},
+        {bidder: 'appnexus', params: {placementId: 22586906}},
+        {bidder: 'sovrn', params: {tagid: '928846'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_sticky_footer_m'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '714806565'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: ''}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1519331623268-1',
+      mediaTypes: { banner: { sizes: [[300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '701862'}},
+        {bidder: 'appnexus', params: {placementId: 22586907}},
+        {bidder: 'sovrn', params: {tagid: '928847'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_mob_300x250_3'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '360152156'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'pfr_mob_300x250_3'}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1680364131384-0', 
+      mediaTypes: { banner: { sizes: [[300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '980954'}},
+        {bidder: 'appnexus', params: {placementId: 22586907}},
+        {bidder: 'sovrn', params: {tagid: '928847'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_mob_300x250_art_dyn'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '360152156'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'pfr_mob_300x250_art_dyn'}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1680364154120-0', 
+      mediaTypes: { banner: { sizes: [[300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '980954'}},
+        {bidder: 'appnexus', params: {placementId: 22586907}},
+        {bidder: 'sovrn', params: {tagid: '928847'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_mob_300x250_art_dyn'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '360152156'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'pfr_mob_300x250_art_dyn'}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1680364180645-0', 
+      mediaTypes: { banner: { sizes: [[300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '980954'}},
+        {bidder: 'appnexus', params: {placementId: 22586907}},
+        {bidder: 'sovrn', params: {tagid: '928847'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_mob_300x250_art_dyn'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '360152156'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'pfr_mob_300x250_art_dyn'}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1680364206802-0', 
+      mediaTypes: { banner: { sizes: [[300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '980954'}},
+        {bidder: 'appnexus', params: {placementId: 22586907}},
+        {bidder: 'sovrn', params: {tagid: '928847'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_mob_300x250_art_dyn'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '360152156'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'pfr_mob_300x250_art_dyn'}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1680364227571-0', 
+      mediaTypes: { banner: { sizes: [[300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '980954'}},
+        {bidder: 'appnexus', params: {placementId: 22586907}},
+        {bidder: 'sovrn', params: {tagid: '928847'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_mob_300x250_art_dyn'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '360152156'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'pfr_mob_300x250_art_dyn'}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1680364253676-0', 
+      mediaTypes: { banner: { sizes: [[300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '980954'}},
+        {bidder: 'appnexus', params: {placementId: 22586907}},
+        {bidder: 'sovrn', params: {tagid: '928847'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_mob_300x250_art_dyn'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '360152156'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'pfr_mob_300x250_art_dyn'}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1680364276431-0', 
+      mediaTypes: { banner: { sizes: [[300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '980954'}},
+        {bidder: 'appnexus', params: {placementId: 22586907}},
+        {bidder: 'sovrn', params: {tagid: '928847'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_mob_300x250_art_dyn'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '360152156'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'pfr_mob_300x250_art_dyn'}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1680364296038-0', 
+      mediaTypes: { banner: { sizes: [[300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '980954'}},
+        {bidder: 'appnexus', params: {placementId: 22586907}},
+        {bidder: 'sovrn', params: {tagid: '928847'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_mob_300x250_art_dyn'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '360152156'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'pfr_mob_300x250_art_dyn'}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    },
+    {
+      code: 'div-gpt-ad-1680364317621-0', 
+      mediaTypes: { banner: { sizes: [[300, 250]]}},
+      bids: [
+        {bidder: 'ix', params: {siteId: '980954'}},
+        {bidder: 'appnexus', params: {placementId: 22586907}},
+        {bidder: 'sovrn', params: {tagid: '928847'}},
+        {bidder: 'triplelift', params: {inventoryCode: 'pfr_mob_300x250_art_dyn'}},
+        {bidder: 'medianet', params: {cid: '8CU6VMEF4', crid: '360152156'}},
+        {bidder: 'conversant', params: {site_id: '211260'}},
+        {bidder: 'minutemedia', params: {org: '01gmb0c9g9bf', placementId: 'pfr_mob_300x250_art_dyn'}},
+        {bidder: 'adtelligent', params: {aid: 824541}}
+      ]
+    }
+  ];
+
+  // ======== PBJS & GOOG CONFIG AREA =========== //
+  const customConfigObject = {
+    "buckets": [
+      {"precision": 2, "min": 0.01, "max": 20, "increment": 0.01},
+      {"precision": 2, "min": 20.05, "max": 30, "increment": 0.05},
+      {"precision": 2, "min": 30.10, "max": 40, "increment": 0.1},
+      {"precision": 2, "min": 40.50, "max": 50, "increment": 0.5},
+      {"precision": 2, "min": 51, "max": 999, "increment": 1.00}
+    ]
+  };
+
+  var pbjs = pbjs || {};
+  pbjs.que = pbjs.que || [];
+
+  pbjs.que.push(function() {
+    pbjs.addAdUnits(adUnits);
+    pbjs.setConfig({
+      priceGranularity: customConfigObject,
+    });
+    pbjs.requestBids({
+        bidsBackHandler: sendAdserverRequest,
+    });
+  });
+
+  function sendAdserverRequest() {
+    if (pbjs.adserverRequestSent) return;
+    pbjs.adserverRequestSent = true;
+    googletag.cmd.push(function() {
+        pbjs.que.push(function() {
+            pbjs.setTargetingForGPTAsync();
+            googletag.pubads().refresh();
+        });
+    });
+  }
+
+  setTimeout(function() {
+    sendAdserverRequest();
+  }, FAILSAFE_TIMEOUT);
+
+  googletag.cmd.push(function() {
+    if ( document.body.className.match(/\bsingle\b/) ) {
+      googletag.defineSlot('/5067886/pfr_mob_320x50', [320, 50], 'div-gpt-ad-1519331623268-2').addService(googletag.pubads());
+      googletag.defineSlot('/5067886/pfr_mob_300x250_3', [[250, 250], [300, 250]], 'div-gpt-ad-1519331623268-3').addService(googletag.pubads());
+      googletag.defineSlot('/5067886/pfr_mob_300x250_art_dyn', [300, 250], 'div-gpt-ad-1680364131384-0').setTargeting('mob2', []).addService(googletag.pubads());
+      googletag.defineSlot('/5067886/pfr_mob_300x250_art_dyn', [300, 250], 'div-gpt-ad-1680364154120-0').setTargeting('mob3', []).addService(googletag.pubads());
+      googletag.defineSlot('/5067886/pfr_mob_300x250_art_dyn', [300, 250], 'div-gpt-ad-1680364180645-0').setTargeting('mob4', []).addService(googletag.pubads());
+      googletag.defineSlot('/5067886/pfr_mob_300x250_art_dyn', [300, 250], 'div-gpt-ad-1680364206802-0').setTargeting('mob5', []).addService(googletag.pubads());
+      googletag.defineSlot('/5067886/pfr_mob_300x250_art_dyn', [300, 250], 'div-gpt-ad-1680364227571-0').setTargeting('mob6', []).addService(googletag.pubads());
+      googletag.defineSlot('/5067886/pfr_mob_300x250_art_dyn', [300, 250], 'div-gpt-ad-1680364253676-0').setTargeting('mob7', []).addService(googletag.pubads());
+      googletag.defineSlot('/5067886/pfr_mob_300x250_art_dyn', [300, 250], 'div-gpt-ad-1680364276431-0').setTargeting('mob8', []).addService(googletag.pubads());
+      googletag.defineSlot('/5067886/pfr_mob_300x250_art_dyn', [300, 250], 'div-gpt-ad-1680364296038-0').setTargeting('mob9', []).addService(googletag.pubads());
+      googletag.defineSlot('/5067886/pfr_mob_300x250_art_dyn', [300, 250], 'div-gpt-ad-1680364317621-0').setTargeting('mob10', []).addService(googletag.pubads());
+      googletag.defineSlot('/5067886/pfr_mob_320x50_art_footer', [320, 50], 'div-gpt-ad-1591129859473-0').addService(googletag.pubads());
+    } else {
+      googletag.defineSlot('/5067886/pfr_mob_320x50_home', [320, 50], 'div-gpt-ad-1519331623268-0').addService(googletag.pubads());
+      googletag.defineSlot('/5067886/pfr_mob_300x250_2', [[250, 250], [300, 250]], 'div-gpt-ad-1519331623268-1').addService(googletag.pubads());
+      googletag.defineSlot('/5067886/pfr_mob_320x50_home_footer', [320, 50], 'div-gpt-ad-1591129820116-0').addService(googletag.pubads());
+    }
+    //googletag.pubads().enableSingleRequest();
+    googletag.pubads().enableAsyncRendering();
+    googletag.enableServices();
+  });
+</script>
